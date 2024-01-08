@@ -1,0 +1,223 @@
+<!--Shree Ganeshaye Namah-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="index.css">
+    <!--Box-Icon link-->
+    <link rel="stylesheet" href="boxicons.min.css">
+    <!--Remix-Icon link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--Google-Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="icon"><img class="icontodo" src="assets/To-do.png" alt="To-Do Icon"></div>
+
+    <ul class="list">
+        <li>
+            <div class="to">
+                <div class="weekly-schedule">
+                    <div class="inline">
+                        <h1 class="heading">Tasks Pending </h1>
+                        <button class="btnn" onclick=showDialog()>Add</button>
+                    </div>
+                    <div class="calendar">
+                        <div class="day-and-activity activity-one">
+                            <div class="day" >
+                                <h1 id="date1p"></h1>
+                                <p id="day1p">wed</p>
+                            </div>
+                            <div class="activity">
+                                <h2 id="tit1p">Yoga</h2>
+                                <div class="description" id="des1p">
+                                    Hello
+                                </div>
+                            </div>
+                            <button class="btn" onclick=do1()>Done</button>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <div class="day-and-activity activity-two">
+                            <div class="day">
+                                <h1 id="date2p"></h1>
+                                <p id="day2p">wed</p>
+                            </div>
+                            <div class="activity">
+                                <h2 id="tit2p">Yoga</h2>
+                                <div class="description" id="des2p">
+                                    Hello
+                                </div>
+                            </div>
+                            <button class="btn" onclick=do2()>Done</button>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <div class="day-and-activity activity-three">
+                            <div class="day">
+                                <h1 id="date3p"></h1>
+                                <p id="day3p">wed</p>
+                            </div>
+                            <div class="activity">
+                                <h2 id="tit3p">Yoga</h2>
+                                <div class="description" id="des3p">
+                                    Hello
+                                </div>
+                            </div>
+                            <button class="btn" onclick=do3()>Done</button>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <div class="day-and-activity activity-four">
+                            <div class="day">
+                                <h1 id="date4p"></h1>
+                                <p id="day4p">wed</p>
+                            </div>
+                            <div class="activity">
+                                <h2 id="tit4p">Yoga</h2>
+                                <div class="description" id="des4p">
+                                    Hello
+                                </div>
+                            </div>
+                            <button class="btn" onclick=do4()>Done</button>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <div class="day-and-activity activity-five">
+                            <div class="day">
+                                <h1 id="date5p"></h1>
+                                <p id="day5p">wed</p>
+                            </div>
+                            <div class="activity">
+                                <h2 id="tit5p">Yoga</h2>
+                                <div class="description" id="des5p">
+                                    Hello
+                                </div>
+                            </div>
+                            <button class="btn" onclick=do5()>Done</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            </div>
+        </li>
+        <li>
+            <div class="do">
+                <div class="weekly-schedule">
+                    <h1 class="heading">Tasks Completed</h1>
+                    <div class="calendar">
+                        <div class="day-and-activity activity-ones">
+                            <div class="day">
+                                <h1 id="date1s"></h1>
+                                <p id="day1s"></p>
+                            </div>
+                            <div class="activity">
+                                <h2 id="tit1s"></h2>
+                                <div class="description" id="des1s">
+                                    
+                                </div>
+                            </div>
+                            <button class="btn" onclick=de1()>Delete</button>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <div class="day-and-activity activity-twos">
+                            <div class="day">
+                                <h1 id="date2s"></h1>
+                                <p id="day2s"></p>
+                            </div>
+                            <div class="activity">
+                                <h2 id="tit2s"></h2>
+                                <div class="description" id="des2s">
+                                    
+                                </div>
+                            </div>
+                            <button class="btn" onclick=de2() >Delete</button>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <div class="day-and-activity activity-threes">
+                            <div class="day">
+                                <h1 id="date3s"></h1>
+                                <p id="day3s"></p>
+                            </div>
+                            <div class="activity">
+                                <h2 id="tit3s"></h2>
+                                <div class="description" id="des3s">
+                                    
+                                </div>
+                            </div>
+                            <button class="btn" onclick=de3() >Delete</button>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <div class="day-and-activity activity-fours">
+                            <div class="day">
+                                <h1 id="date4s"></h1>
+                                <p id="day4s"></p>
+                            </div>
+                            <div class="activity">
+                                <h2 id="tit4s"></h2>
+                                <div class="description" id="des4s">
+                                    
+                                </div>
+                            </div>
+                            <button class="btn" onclick=de4() >Delete</button>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <div class="day-and-activity activity-fives">
+                            <div class="day" >
+                                <h1 id="date5s"></h1>
+                                <p id="day5s"></p>
+                            </div>
+                            <div class="activity">
+                                <h2 id="tit5s"></h2>
+                                <div class="description" id="des5s"></div>
+                            </div>
+                            <button class="btn" onclick=de5()>Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </li>
+    </ul>
+    <div class="dialog">
+        <div class="calendar">
+            <div class="day-and-activity .activity-d">
+                <div class="day">
+                    <textarea name="" id="" rows="1" class="datetxt" maxlength="2" placeholder="Date"></textarea>
+                    <textarea name="" id="" rows="1" class="daytxt" maxlength="3" placeholder="Day"></textarea>
+                </div>
+                <div class="activity">
+                    <textarea name="" id="" rows="1" class="tittxt" maxlength="15" placeholder="Task Title"></textarea>
+                    <div class="description">
+                        <textarea name="" id="" rows="1" class="destxt" maxlength="25" placeholder="Task Description"></textarea>
+                    </div>
+                </div>
+
+                <button class="btn" onclick=closeDialog()>Add</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Custom JS Link-->
+    <script src="index.js"></script>
+</body>
+
+</html>
